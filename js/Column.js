@@ -20,6 +20,9 @@ function Column(id, name) {
 		
 		columnAddCard.click(function(event) {
 			var cardName = prompt("Enter the name of the card");
+			if (cardName === null) {
+          		return;
+        	}
 			event.preventDefault();
 			$.ajax({
 			    url: baseUrl + '/card',
