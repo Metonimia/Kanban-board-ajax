@@ -69,3 +69,7 @@ li.card {
   margin: 1vh;
   background-color: lightblue;
 }
+
+.unavailable {
+  text-decoration: line-through;
+}
